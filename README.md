@@ -13,11 +13,7 @@ Memorability is defined as the state of being easy to remember or worth remember
 In this project, we investigated the Media Memorability scores and further predicted the short-term and long-term scores based on the various features and using different algorithms. As part of the MediaEval Media Memorability challenge 2018, we were given short videos including different descriptive features to predict memorability such as InceptionV3, C3D, HMP, ColorHistogram, and so on. Initially,
 I trained the models separately with all the given features but then later chose Captions, HMP, and Inception to predict the memorability as previous work has also shown us that using captions and HMP yields good results as compared to other features like ColorHistogram or C3D. Therein, I trained various models using different algorithms to predict the memorability score. The models are then evaluated using Spearman Correlational Coefficient.
 
-*Based on the analysis it can be said that:*
 
-* Captions yield better results than any other features available and whereas Inception being the worst.
-* Short-term memorability scores were more accurate than the long-term memorability scores.
-* If we increase the size of the test-set in the prediction the performance will go down and will become more sturdy.
 
 **MODEL EXPLORATION**
 
@@ -28,6 +24,12 @@ and used Support Vector Regression algorithm.
 * For HMP, I used Random Forest and Decision Tree
 Regression algorithm.
 * For Inception, I used Sequential Neural network algorithm.
+
+*Based on the analysis it can be said that:*
+
+* Captions yield better results than any other features available and whereas Inception being the worst.
+* Short-term memorability scores were more accurate than the long-term memorability scores.
+* If we increase the size of the test-set in the prediction the performance will go down and will become more sturdy.
 
 **CONCLUSION**
 
